@@ -1,44 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>encriptador/desencriptador</title>
-</head>
-<body>
-    <input/>
-    <p>Solo letras minúsculas y sin acentos</p>
-    <button>Encriptar</button>
-    <button>Desencriptar</button>
-</body>
-<script>
-    var input1 = "Ejemplo de un texto para encriptar" // document.querySelector("input");
- 
-    function encriptar(texto){
-        var array = input1.split("");
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>encriptador/desencriptador</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="contenedor-logo">
+                <img src="resources/logo-alura.png" alt="logo de alura" class="logo">
+            </div> 
+        </header>
+        <main>
+            <section>
+                <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="informacion">
+                    <h6>Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div>
+                    <button class="btn-encriptar">Encriptar</button>
+                    <button class="btn-desencriptar">Desencriptar</button>
+                </div>
+            </section>
+            <section>
 
-        for (var i = 0; i < array.length; i++){
-            if (array[i] == 'a'){
-                array[i] = "ai";
-            }
-            if (array[i] == 'e'){
-                array[i] = "enter"
-            }
-            if (array[i] == 'i'){
-                array[i] = "imes";
-            }
-            if (array[i] == 'o'){
-                array[i] = "ober";
-            }
-            if (array[i] == 'u'){
-                array[i] = "ufat";
-            }
-        }
-        return array;
-    }
-
-    var textoEncriptado = encriptar(input1).join("").toString();
-    console.log(textoEncriptado);
-</script>
+            </section>
+        </main>
+    </body>
+    <script>
+        
+    </script>
 </html>
