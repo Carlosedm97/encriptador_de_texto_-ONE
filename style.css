@@ -89,13 +89,13 @@ main{
 
 .mensaje{
     background-color: #FFFFFF;
-    background-image: url(resources/Muñeco.jpg);
+    background-image: url(resources/muñeco.jpg);
     background-position: center;
     background-repeat: no-repeat;
     width: 400px;
-    height: 544px;
+    height: 400px;
     position: absolute;
-    top: 40px;
+    top: 160px;
     left: 900px;
     border: none;
     border-radius: 24px;
@@ -121,4 +121,10 @@ main{
     font-size: 16px;
     line-height: 19.36px;
     text-align: center;
+}
+
+@media screen and (max-width: 480px){
+    .main{
+        display: inline;
+    }
 }
