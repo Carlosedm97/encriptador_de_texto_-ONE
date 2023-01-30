@@ -6,17 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>encriptador/desencriptador</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <div class="contenedor-logo">
-                <img src="resources/logo-alura.png" alt="logo de alura" class="logo">
-            </div> 
+            <img class="logo" src="resources/logo-alura.png" alt="logo de alura">
         </header>
         <main>
             <section>
-                <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea class="text-area" cols="30" rows="5" placeholder="Ingrese el texto aqui"></textarea>
                 <div class="informacion">
+                    <img src="resources/informacion.png" alt="icono que indica informacion">
                     <h6>Solo letras minúsculas y sin acentos</h6>
                 </div>
                 <div>
@@ -24,12 +26,11 @@
                     <button class="btn-desencriptar">Desencriptar</button>
                 </div>
             </section>
+            
             <section>
-
+                    <textarea class="mensaje" cols="30" rows="10"></textarea>
+                    <button class="btn-copiar">Copiar</button>
             </section>
         </main>
     </body>
-    <script>
-        
-    </script>
 </html>
