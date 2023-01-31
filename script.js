@@ -1,22 +1,22 @@
-const textArea = document.querySelector(".text-area");
-const campoMensaje = document.querySelector(".mensaje");
+const entradaTexto = document.querySelector(".entrada-texto");
+const salidaTexto = document.querySelector(".salida-texto");
 const button = document.querySelector(".btn-copiar");
 
 function btnEncriptar(){
-    const textoEncriptado = encriptar(textArea.value);
-    campoMensaje.value = textoEncriptado;
-    textArea.value = "";
-    campoMensaje.style.backgroundImage = "none";
+    const textoEncriptado = encriptar(entradaTexto.value);
+    salidaTexto.value = textoEncriptado;
+    entradaTexto.value = "";
+    salidaTexto.style.backgroundImage = "none";
 }
 
 function btnDesencriptar(){
-    const textDesencriptado = desencriptar(textArea.value);
-    campoMensaje.value = textDesencriptado;
-    textArea.value = "";
+    const textDesencriptado = desencriptar(entradaTexto.value);
+    salidaTexto.value = textDesencriptado;
+    entradaTexto.value = "";
 }
 
 function btnCopiar(){
-    campoMensaje.focus();
+    salidaTexto.focus();
     document.execCommand('selectAll');
     document.execCommand('copy');
 }
