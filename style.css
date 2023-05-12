@@ -1,135 +1,142 @@
-*{
-    background: #F3F5FC;
+* {
+    box-sizing: border-box;
     font-family: 'Inter';
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
+    margin: 0;
 }
 
-.logo{
-    margin-top: 40px;
+body {
+    height: 100vh;
+    padding: 40px 3%;
+    background-color: #F3F5FC;
 }
 
-main{
+.main {
+    margin: 20px 0;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.entrada-texto{
-    position: absolute;
-    top: 168px;
-    left: 140px;
+.input__container {
+    width: 50%;
+    height: 100%;
+    padding: 32px;
+}
+
+.output__container {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.output {
+    width: 100%;
+    height: 350px;
+    resize: none;
     border: none;
-    text-transform: lowercase;
-}
-
-.entrada-texto::placeholder{ 
-    color:#0A3871; 
-}
-    
-.entrada-texto:focus{
     outline: none;
-}
- 
-.informacion img{
-    position: absolute;
-    top: 452px;
-    left: 140px;
+    font-size: 24px;
 }
 
-.informacion h6{
-    margin: 0px;
-    font-weight: 400px;
-    font-size: 12px;
-    line-height: 18px;
-    color:#495057;
-    opacity: 0.8;
-    position: absolute;
-    top: 451px;
-    left: 164px;
+.input {
+    width: 100%;
+    height: 350px;
+    border: none;
+    font-size: 2rem;
+    background-color: #f3f5fc;
+    outline: none;
+    resize: none;
 }
 
-.btn-encriptar{
-    position: absolute;
-    top: 485px;
-    left: 140px;
-    color: #FFFFFF;
+.input::placeholder {
+    color: #0A3871;
+}
+
+.input__info {
+    color: #495057;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.input__info h6 {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.input__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.button {
+    width: 48%;
+    padding: 15px 0;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn-encriptar {
     background-color: #0A3871;
-    width: 328px;
-    height: 67px;
-    border-radius: 24px;
-    border: none;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19.36px;
-    text-align: center;
-    cursor: pointer;
-    transition: 1s all;
+    color: #fff;
 }
 
-.btn-encriptar:hover{
-    transform: scale(1.1);
-}
-
-.btn-desencriptar{
-    position: absolute;
-    top: 485px;
-    left: 492px;
+.btn-desencriptar {
+    background-color: transparent;
     color: #0A3871;
-    background-color: #D8DFE8;
-    width: 328px;
-    height: 67px;
-    border-radius: 24px;
     border: 1px solid #0A3871;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19.36px;
-    text-align: center;
-    cursor: pointer;
-    transition: 1s all;
 }
 
-.btn-desencriptar:hover{
-    transform: scale(1.1);
-}
-
-.salida-texto{
-    background-color: #FFFFFF;
-    background-image: url(resources/muñeco.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 400px;
-    height: 500px;
-    position: absolute;
-    top: 60px;
-    left: 900px;
-    border: none;
-    border-radius: 24px;
-    color: #0A3871;
-    text-align: center;
-}
-
-.salida-texto:focus{
-    outline: none;
-}
-
-.btn-copiar{
-    position: absolute;
-    top: 485px;
-    left: 940px;
-    color: #0A3871;
-    background-color: #FFFFFF;
-    width: 328px;
-    height: 67px;
-    border-radius: 24px;
+.btn-copiar {
+    width: 100%;
     border: 1px solid #0A3871;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19.36px;
-    text-align: center;
+    background-color: transparent;
+    color: #0A3871;
+    margin-top: 16px;
     cursor: pointer;
-    transition: 1s all;
 }
 
-.btn-copiar:hover{
-    transform: scale(1.1);
+@media screen and (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 40px 2%;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .input__container {
+        width: 100%;
+    }
+
+    .output__container {
+        width: 100%;
+        height: auto;
+    }
+
+    .output {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        padding: 20px 1%;
+    }
+
+    .input__buttons {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .button {
+        width: 100%;
+    }
 }

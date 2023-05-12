@@ -1,5 +1,5 @@
-const entradaTexto = document.querySelector(".entrada-texto");
-const salidaTexto = document.querySelector(".salida-texto");
+const entradaTexto = document.querySelector(".input");
+const salidaTexto = document.querySelector(".output");
 const button = document.querySelector(".btn-copiar");
 
 function btnEncriptar(){
