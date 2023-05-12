@@ -132,6 +132,10 @@ body {
         padding: 20px 1%;
     }
 
+    .input {
+        font-size: 1rem;
+    }
+
     .input__buttons {
         flex-direction: column;
         gap: 24px;
