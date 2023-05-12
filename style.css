@@ -147,6 +147,7 @@ body {
 
     .output {
         font-size: 1rem;
+        height: auto;
     }
 
     .input__buttons {
