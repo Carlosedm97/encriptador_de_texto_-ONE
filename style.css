@@ -145,6 +145,10 @@ body {
         font-size: 1rem;
     }
 
+    .output {
+        font-size: 1rem;
+    }
+
     .input__buttons {
         flex-direction: column;
         gap: 24px;
